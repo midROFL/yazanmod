@@ -38,12 +38,13 @@ public class GameSettings
         keyBindDrop = new KeyBinding("key.drop", 16);
         keyBindChat = new KeyBinding("key.chat", 20);
         keyBindSneak = new KeyBinding("key.sneak", 42);
+        keyBindSprint = new KeyBinding("key.sprint", 29);
         field_35382_v = new KeyBinding("key.attack", -100);
         field_35381_w = new KeyBinding("key.use", -99);
         field_35384_x = new KeyBinding("key.playerlist", 15);
         field_35383_y = new KeyBinding("key.pickItem", -98);
         keyBindings = (new KeyBinding[] {
-            field_35382_v, field_35381_w, keyBindForward, keyBindLeft, keyBindBack, keyBindRight, keyBindJump, keyBindSneak, keyBindDrop, keyBindInventory, 
+            field_35382_v, field_35381_w, keyBindForward, keyBindLeft, keyBindBack, keyBindRight, keyBindJump, keyBindSneak, keyBindSprint, keyBindDrop, keyBindInventory, 
             keyBindChat, field_35384_x, field_35383_y
         });
         difficulty = 2;
@@ -87,12 +88,13 @@ public class GameSettings
         keyBindDrop = new KeyBinding("key.drop", 16);
         keyBindChat = new KeyBinding("key.chat", 20);
         keyBindSneak = new KeyBinding("key.sneak", 42);
+        keyBindSprint = new KeyBinding("key.sprint", 29);
         field_35382_v = new KeyBinding("key.attack", -100);
         field_35381_w = new KeyBinding("key.use", -99);
         field_35384_x = new KeyBinding("key.playerlist", 15);
         field_35383_y = new KeyBinding("key.pickItem", -98);
         keyBindings = (new KeyBinding[] {
-            field_35382_v, field_35381_w, keyBindForward, keyBindLeft, keyBindBack, keyBindRight, keyBindJump, keyBindSneak, keyBindDrop, keyBindInventory, 
+            field_35382_v, field_35381_w, keyBindForward, keyBindLeft, keyBindBack, keyBindRight, keyBindJump, keyBindSneak, keyBindSprint, keyBindDrop, keyBindInventory, 
             keyBindChat, field_35384_x, field_35383_y
         });
         difficulty = 2;
@@ -551,6 +553,7 @@ public class GameSettings
     public KeyBinding keyBindDrop;
     public KeyBinding keyBindChat;
     public KeyBinding keyBindSneak;
+    public KeyBinding keyBindSprint;
     public KeyBinding field_35382_v;
     public KeyBinding field_35381_w;
     public KeyBinding field_35384_x;

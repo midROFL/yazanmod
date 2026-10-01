@@ -61,7 +61,7 @@ public class EntityPlayerSP extends EntityPlayer
         if(field_35221_d > 0)
         {
             field_35221_d--;
-            if(field_35221_d == 0)
+            if(field_35221_d == 0 && !mc.gameSettings.keyBindSprint.field_35965_e)
             {
                 func_35113_c(false);
             }
@@ -164,7 +164,15 @@ public class EntityPlayerSP extends EntityPlayer
                 field_35224_c = 0;
             }
         }
-        if(func_35117_Q() && (movementInput.moveForward < f || isCollidedHorizontally || !flag2))
+        if(mc.gameSettings.keyBindSprint.field_35965_e && movementInput.moveForward > 0.0F && !func_35117_Q() && flag2 && !func_35196_Z())
+        {
+            func_35113_c(true);
+        }
+        if(func_35117_Q() && (isCollidedHorizontally || !flag2))
+        {
+            func_35113_c(false);
+        }
+        if(func_35117_Q() && !mc.gameSettings.keyBindSprint.field_35965_e && movementInput.moveForward < f)
         {
             func_35113_c(false);
         }
